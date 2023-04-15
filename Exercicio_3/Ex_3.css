@@ -1,0 +1,17 @@
+.black {
+    width: 500px;
+    padding: 100px;
+    background-color: #000000;
+}
+
+.red {
+    width: 500px;
+    padding: 100px;
+    background-color: #FF0404;
+}
+
+.yellow {
+    width: 500px;
+    padding: 100px;
+    background-color: #F8CF07;
+}
