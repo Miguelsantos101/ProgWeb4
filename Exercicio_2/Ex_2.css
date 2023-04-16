@@ -22,7 +22,8 @@ h1 {
     width: 50%;
 }
 
-table, td {
+table,
+td {
     font-size: medium;
     border: 1px solid black;
     border-collapse: collapse;
@@ -37,6 +38,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  font-size: larger;
+    font-weight: 700;
+    font-size: larger;
 }
