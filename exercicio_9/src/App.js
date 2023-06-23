@@ -13,7 +13,6 @@ class App extends Component {
     };
     this.timer = null;
     this.iniciar = this.iniciar.bind(this);
-    this.aumetaTimer = this.aumetaTimer.bind(this);
     this.limpar = this.limpar.bind(this);
   }
 
@@ -26,7 +25,11 @@ class App extends Component {
       this.timer = null;
       state.botao = "INICIAR";
     } else {
-      this.timer = setInterval(this.aumetaTimer, 1000);
+      this.timer = setInterval(() => {
+        let state = this.state;
+        state.numero += 1;
+        this.setState(state);
+      }, 1000);
       state.botao = "PAUSAR";
     }
 
@@ -36,12 +39,6 @@ class App extends Component {
   limpar() {
     let state = this.state;
     state.numero = 0;
-    this.setState(state);
-  }
-
-  aumetaTimer() {
-    let state = this.state;
-    state.numero += 1;
     this.setState(state);
   }
 
